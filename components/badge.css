@@ -1,0 +1,25 @@
+.badge-status{
+    padding: var(--spacing-4) var(--spacing-8);
+    border-radius: var(--border-radius-6px);
+    color: color-mix(in srgb, #fff, transparent 30%);
+    font-weight: 400;
+}
+body.light .badge-status{
+    color:  #fff;
+}
+
+.badge-status-warning {
+    background: color-mix(in srgb, var(--warning), transparent 20%);
+}
+
+.badge-status-danger{
+    background: color-mix(in srgb, var(--danger), transparent 20%);
+}
+
+.badge-status-info{
+    background: color-mix(in srgb, var(--info), transparent 20%);
+}
+
+.badge-status-success{
+    background: color-mix(in srgb, var(--success), transparent 20%);
+}

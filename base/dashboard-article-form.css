@@ -1,0 +1,5 @@
+.container-article-form{
+    padding: var(--spacing-12);
+    border-radius: var(--border-radius-6px);
+    background-color: var(--bg-layer1);
+}

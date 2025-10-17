@@ -1,0 +1,68 @@
+form{
+    padding: var(--spacing-8) var(--spacing-16);
+}
+input, select,textarea {
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius-6px);
+
+    background: transparent;
+
+    padding: var(--spacing-8);
+    color: var(--text);
+
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+input:focus,
+select:focus,form textarea:focus {
+    border: 1px solid var(--primary);
+    box-shadow: 0 0 0 1px var(--primary);
+}
+textarea{
+    resize: vertical;
+    box-sizing: border-box;
+    height: 2.5rem;
+    display: block;
+}
+input[type=checkbox], input[type=radio] {
+    margin: 0;
+    height: 1em;
+    width: 1em;
+    border-color: var(--border);
+    accent-color: var(--primary);
+}
+input[type="file"]{
+    cursor: pointer;
+    border: 1px solid var(--border);
+    display: block;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+input[type="file"]::file-selector-button {
+    color: var(--text-muted);
+    background: var(--bg-layer2);
+    cursor: pointer;
+    border: 0;
+    border-right: 1px solid var(--border);
+    margin-inline: -1rem 1rem;
+    padding: .625rem 1rem .625rem 2rem;
+    font-weight: 500;
+}
+
+.form-label{
+    display: inline-block;
+    flex: 1;
+    color: var(--text-muted);
+}
+.form-radio{
+    margin-left: var(--spacing-4);
+    color: var(--text-muted);
+}
+.form-submit{
+    margin: var(--spacing-20) 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--spacing-12);
+}

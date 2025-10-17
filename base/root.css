@@ -1,0 +1,90 @@
+:root{
+    --border-radius-3px:3px;
+    --border-radius-6px:6px;
+
+    --primary:#028090;
+
+    --danger: #bf0e0e;
+    --warning: #c8af0c;
+    --success: #4fbf0e;
+    --info: #0e2bbf;
+
+    --font-style:"Roboto", sans-serif;;
+
+    --font-12: 0.75rem;
+    --font-16: 1rem;
+    --font-20: 1.25rem;
+    --font-24: 1.5rem;
+    --font-28: 1.75rem;
+    --font-32: 2rem;
+    --font-36: 2.25rem;
+    --font-40: 2.5rem;
+    --font-44: 2.75rem;
+    --font-48: 3rem;
+
+
+    --spacing-4: 0.25rem;
+    --spacing-8: 0.5rem;
+    --spacing-12: 0.75rem;
+    --spacing-16: 1rem;
+    --spacing-20: 1.25rem;
+    --spacing-24: 1.5rem;
+    --spacing-28: 1.75rem;
+    --spacing-32: 2rem;
+    --spacing-40: 2.5rem;
+    --spacing-60: 3.75rem;
+
+    --icon-base:24px;
+    --icon-small:20px;
+
+    --line-height:1.5;
+    --letter-spacing:.8px;
+}
+
+:root{
+    /*dark mode*/
+    --bg-layer1:#0f0f0f;
+    --bg-layer2:#272727;
+    --border:#303030;
+
+    --text:#FFFFFF;
+    --text-muted:#C6C6C6;
+
+}
+body.light{
+    --bg-layer1:#FFFFFF;
+    --bg-layer2: #e6e5e5;
+    --border:#C6C6C6;
+
+    --text:#0f0f0f;
+    --text-muted:#303030;
+
+}
+
+body{
+    font-family: var(--font-style), system-ui;
+    background-color: var(--bg-layer1);
+    color: var(--text);
+
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+    font-weight: 300;
+}
+
+pre{
+    padding: var(--spacing-8) var(--spacing-16);
+    margin: var(--spacing-12) 0;
+    border-radius: var(--border-radius-6px);
+    background-color: var(--bg-layer2);
+
+    width: 100%;
+    height: auto;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: var(--border);
+    border-radius: 3px;
+    margin: var(--spacing-4) auto;
+}

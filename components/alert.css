@@ -1,0 +1,52 @@
+.alert{
+    background: transparent;
+
+    display: block;
+
+    padding: var(--spacing-8) var(--spacing-16);
+    margin-bottom: var(--spacing-12);
+
+    border-radius: var(--border-radius-6px);
+    border: 1px solid var(--border);
+
+    color: color-mix(in srgb, #fff, transparent 15%);
+    font-weight: 400;
+
+
+    svg{
+        width: var(--icon-small);
+        height: var(--icon-small);
+        fill: color-mix(in srgb, #fff, transparent 15%);
+    }
+}
+
+body.light .alert{
+    color: color-mix(in srgb, #fff, transparent 7%);
+}
+
+.alert-danger{
+    border: 1px solid var(--danger);
+    /*mencampur 40% warna putih ke warna dasar*/
+    background: color-mix(in srgb, var(--danger), transparent 15%);
+}
+
+.alert-info{
+    border: 1px solid var(--info);
+    /*mencampur 40% warna putih ke warna dasar*/
+    background: color-mix(in srgb, var(--info), transparent 15%);
+
+}
+
+.alert-success{
+    border: 1px solid var(--success);
+    /*mencampur 40% warna putih ke warna dasar*/
+    background: color-mix(in srgb, var(--success), transparent 15%);
+
+}
+
+.alert-warning{
+    border: 1px solid var(--warning);
+    /*mencampur 40% warna putih ke warna dasar*/
+    background: color-mix(in srgb, var(--warning), transparent 15%);
+
+}

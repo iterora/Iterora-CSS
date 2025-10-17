@@ -1,0 +1,74 @@
+/*--------------BUTTON-------------*/
+button{
+    color: inherit;
+    font-size: inherit;
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+
+    font-family: var(--font-style);
+    font-size: var(--font-16);
+    font-weight: 400;
+    text-align: center;
+
+    padding: var(--spacing-8) var(--spacing-16);
+    height: fit-content;
+
+    border-radius: var(--border-radius-3px);
+    border: 1px solid var(--border);
+    transition: all 0.2s ease-in-out;
+
+    background-color: var(--bg-layer1);
+
+    /*default white color, tetapi ketika dark mode akan menyesuaikan*/
+    color: #fff;
+}
+body.light .btn {
+    color: #000;
+}
+.btn:hover,
+.btn:focus {
+    filter: brightness(120%);
+}
+
+body.light .btn:hover,
+body.light .btn:focus {
+    filter: brightness(90%);
+}
+
+.btn:disabled{
+    pointer-events: none;
+    opacity: .65;
+}
+
+/*pada button primary ketika gelap dan terang tetap putih teksnya*/
+.btn-primary,
+body.light .btn-primary{
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    color: #fff;
+}
+.btn-secondary{
+    background-color: var(--bg-layer2);
+    border: 1px solid var(--bg-layer2);
+}
+
+.btn-small{
+    padding: var(--spacing-4) var(--spacing-8);
+    font-size: var(--font-12);
+}
+.btn-large{
+    padding: var(--spacing-12) var(--spacing-20);
+    font-size: var(--font-24);
+}
+
+.btn-close {
+    width: 1em;
+    height: 1em;
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23787474'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 1em;
+}
+
+

@@ -1,0 +1,27 @@
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+
+
+figure {
+    margin: 0 auto;
+    padding: var(--spacing-8);
+    text-align: center;
+    overflow-x: auto;
+    display: block;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: var(--border-radius-6px);
+        display: block;
+    }
+
+    figcaption {
+        display: block;
+        text-align: center;
+        font-size: var(--font-12);
+        font-weight: 400;
+    }
+}

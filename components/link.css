@@ -1,0 +1,9 @@
+.link-primary{
+    padding: var(--spacing-8) var(--spacing-16);
+    border-radius: var(--border-radius-3px);
+
+    cursor: pointer;
+}
+.link-primary:hover{
+    background-color: color-mix(in srgb, var(--primary), transparent 70%);
+}

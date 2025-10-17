@@ -1,0 +1,37 @@
+table {
+    min-width: 0;
+}
+
+th, td {
+    padding: var(--spacing-8) var(--spacing-16);
+    border-color: var(--border);
+    border-width: 1px;
+    border-bottom-style: solid;
+
+    text-align: start;
+}
+
+th {
+    font-weight: 600;
+    text-align: left;
+    color: var(--text-muted);
+}
+
+tbody tr:hover{
+    background: var(--bg-layer2);
+}
+
+tbody tr td{
+    min-width: 7rem;
+    color: var(--text);
+    padding: var(--spacing-8) 0;
+}
+thead th, thead td {
+    border-width: 2px;
+}
+
+tfoot th, tfoot td {
+    border-width: 2px;
+    border-bottom-style: none;
+    border-top-style: solid;
+}
