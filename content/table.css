@@ -24,7 +24,6 @@ tbody tr:hover{
 tbody tr td{
     min-width: 7rem;
     color: var(--text);
-    padding: var(--spacing-8) 0;
 }
 thead th, thead td {
     border-width: 2px;

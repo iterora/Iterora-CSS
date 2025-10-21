@@ -1,68 +1,55 @@
-    <h2 class="fs-32 mb-8">Articles</h2>
+<div class="dflex jc-space-beetween my-12">
 
-    <div class="dashboard-table-subhead">
+    <h2 class="fs-32 mb-8">Users</h2>
 
-        <!--        filter and create-->
-        <div class="head-1">
-            <div class="tabs">
-                <ul>
-                    <li class="active">default</li>
-                    <li>draft</li>
-                    <li>published</li>
-                </ul>
-            </div>
 
-            <button class="btn btn-primary mr-8">create new article</button>
-        </div>
+    <div class="head-1">
+        <a class="btn btn-primary mr-8 text-500"
+           href=""
+        >new customer</a>
+    </div>
 
-<!--        search input-->
-        <div class="head-2">
-            <div class="search-input">
-                <label>
-                    <input type="search" placeholder="search">
-                </label>
-                <button class="btn-search">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
-                </button>
-            </div>
+</div>
 
+<section class="dashboard-table">
+
+    <div class="subhead">
+        <div class="search-input">
+            <label>
+                <input type="search" id="search" placeholder="search">
+            </label>
+            <button class="btn-search">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+            </button>
         </div>
     </div>
 
 
+    <table class="table" id="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th></th>
+        </tr>
+        </thead>
+
+        <tbody id="tableBody">
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Age</td>
+            <td>City</td>
+            <td>
+                <div class="btn-actions">actions</div>
+            </td>
+        </tr>
+        </tbody>
+
+    </table>
+
+</section>
 
 
-
-    <figure class="dashboard-table">
-        <table class="table">
-            <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Title</th>
-                <th scope="col">Status</th>
-                <th scope="col">Actions</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td class="text-bold">How to improve coding skills</td>
-                <td><span class="badge-status badge-status-success">published</span></td>
-                <td>
-                    <div class="btn-actions">
-                        <a>
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
-                        </a>
-                        <a>
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-trash"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7l16 0" /><path d="M10 11l0 6" /><path d="M14 11l0 6" /><path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" /><path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
-                        </a>
-                        <a>
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-pencil"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" /><path d="M13.5 6.5l4 4" /></svg>
-                        </a>
-                    </div>
-                </td>
-            </tr>
-
-            </tbody>
-        </table>
-    </figure>

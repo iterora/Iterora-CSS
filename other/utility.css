@@ -45,6 +45,9 @@
 .align-item-center{
     align-items: center;
 }
+.jc-space-beetween{
+    justify-content: space-between;
+}
 
 /*font size*/
 .fs-48{

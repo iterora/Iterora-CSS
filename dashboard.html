@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="merge.css">
     <link rel="stylesheet" href="base/dashboard.css">
-    <link rel="stylesheet" href="base/dashboard-article-form.css">
+    <link rel="stylesheet" href="base/dashboard-table.css">
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -146,10 +146,9 @@
     </div>
 
 </div>
-
 <script>
     <!--  this code only for showcase, purpose is separate file with native html js-->
-    fetch('article-form.html')
+    fetch('dashboard-table.html')
         .then(response => response.text())
         .then(html => {
             document.getElementById('content-data').innerHTML = html;  //render
@@ -163,7 +162,18 @@
 <script>
     $(document).ready(function() {
         $('#summernote').summernote({
-            height:300
+            placeholder: 'Powered by summernote',
+            tabsize: 2,
+            height: 300,
+            toolbar: [
+                ['style', ['bold', 'italic', 'underline','style']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['table', ['table']],
+                ['insert', ['link', 'picture', 'video']],
+                ['view', ['fullscreen', 'codeview']]
+            ],
+            icons:{
+            }
         });
     });
 </script>

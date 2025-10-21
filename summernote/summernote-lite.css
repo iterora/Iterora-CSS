@@ -1504,3 +1504,33 @@ html .note-fullscreen-body, body .note-fullscreen-body {
 }
 
 /*# sourceMappingURL=summernote-lite.css.map*/
+
+.note-editable, .note-toolbar{
+    background-color: var(--bg-layer1);
+}
+.note-btn{
+    color: var(--text);
+    background-color: var(--bg-layer1);
+    border: 1px solid var(--bg-layer1);
+}
+.note-modal-content{
+    background-color: var(--bg-layer1);
+    border-radius: var(--border-radius-6px);
+    height: 20rem;
+}
+.note-modal-header{
+    border: 1px solid var(--bg-layer1);
+    border-bottom: 1px solid var(--border);
+}
+.note-modal-title{
+    color: var(--text);
+}
+.close{
+    color: #fff;
+}
+.note-form-label{
+    color: var(--text);
+}
+.note-input{
+    background-color: transparent;
+}
