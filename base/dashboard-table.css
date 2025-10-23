@@ -8,62 +8,38 @@
     min-height: 27rem;
     max-height: 33rem;
 }
-
+.header-table{
+    display: flex;
+    justify-content: space-between;
+}
 .dashboard-table .subhead{
     display: flex;
     justify-content: flex-end;
     padding: var(--spacing-20) var(--spacing-12);
     border-bottom: 1px solid var(--border);
+    gap: var(--spacing-12);
 }
 
 .dashboard-table thead{
     background-color: color-mix(in srgb, var(--bg-layer2), transparent 50%);
 }
 
-.btn-actions{
-    width: fit-content;
-    padding: var(--spacing-8) var(--spacing-8);
-    border-radius: var(--border-radius-6px);
-    border:1px solid var(--border);
-    cursor: pointer;
-}
-.dropdown {
-    display: none;
-    position: absolute;
-    background-color: var(--bg-layer1);
-    min-width: 120px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    z-index: 1;
-    border-radius: var(--border-radius-6px);
-    right: 0;
-}
-.dropdown.active {
-    display: block;
-}
-.dropdown a {
-    padding: 8px 12px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-}
-.dropdown a:hover{
-    background-color: var(--bg-layer2);
-}
-
-.pagination {
-    padding: var(--spacing-20);
+.actions ul{
     display: flex;
-    justify-content: space-between;
     gap: var(--spacing-8);
 }
-
-.pagination button {
-    padding: var(--spacing-8) var(--spacing-16);
-    border: 1px solid var(--border);
-    border-radius: var(--border-radius-6px);
-    background: transparent;
+.actions ul li{
     cursor: pointer;
+    display: flex;
+    gap: var(--spacing-4);
+    align-items: center;
 }
-.detail-page{
-    font-size:14px;
+.actions .delete{
+    color: var(--danger);
+}
+.actions .edit{
+    color: var(--success);
+}
+.actions .detail{
+    color: grey;
 }

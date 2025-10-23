@@ -1,25 +1,58 @@
-.badge-status{
+.badge{
+    display: inline-block;
     padding: var(--spacing-4) var(--spacing-8);
+    margin: var(--spacing-4) 0;
     border-radius: var(--border-radius-6px);
-    color: color-mix(in srgb, #fff, transparent 30%);
-    font-weight: 400;
+    font-weight: 500;
+    font-size: var(--font-12);
 }
-body.light .badge-status{
-    color:  #fff;
+.badge-container{
+    position: relative;
+    display: inline-block;
 }
-
+.badge-notif {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(10px, -10px);
+    background-color: var(--danger);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    z-index: 10;
+}
 .badge-status-warning {
-    background: color-mix(in srgb, var(--warning), transparent 20%);
+    background: color-mix(in srgb, var(--warning), transparent 70%);
+    color: color-mix(in srgb, var(--warning), white 50%);
+    border: 1px solid color-mix(in srgb, var(--warning), transparent 50%);
+}
+body.light .badge-status-warning{
+    color: var(--warning);
 }
 
 .badge-status-danger{
-    background: color-mix(in srgb, var(--danger), transparent 20%);
+    background: color-mix(in srgb, var(--danger), transparent 70%);
+    color: color-mix(in srgb, var(--danger), white 50%);
+    border: 1px solid color-mix(in srgb, var(--danger), transparent 50%);
+}
+body.light .badge-status-danger{
+    color: var(--danger);
 }
 
 .badge-status-info{
-    background: color-mix(in srgb, var(--info), transparent 20%);
+    background: color-mix(in srgb, var(--info), transparent 70%);
+    color: color-mix(in srgb, var(--info), white 50%);
+    border: 1px solid color-mix(in srgb, var(--info), transparent 50%);
+}
+body.light .badge-status-info{
+    color: var(--info);
 }
 
 .badge-status-success{
-    background: color-mix(in srgb, var(--success), transparent 20%);
+    background: color-mix(in srgb, var(--success), transparent 70%);
+    color: color-mix(in srgb, var(--success), white 50%);
+    border: 1px solid color-mix(in srgb, var(--success), transparent 50%);
+}
+body.light .badge-status-success{
+    color: var(--success);
 }

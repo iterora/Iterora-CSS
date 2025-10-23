@@ -1,0 +1,71 @@
+/* Overlay latar belakang */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal {
+    background-color: var(--bg-layer1, #fff);
+    border: 1px solid var(--border, #ddd);
+    border-radius: var(--border-radius-6px, 8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    padding: var(--spacing-16, 1rem) var(--spacing-20, 1.25rem);
+    width: 25rem;
+    min-height: 13rem;
+
+    display: flex;
+    flex-direction: column;
+
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+
+.modal-overlay.active .modal {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Judul */
+.modal-title {
+    text-align: center;
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text, #222);
+}
+
+/* Isi pesan */
+.modal-message {
+    flex: 1;
+    margin-top: var(--spacing-12, 0.75rem);
+    color: var(--text, #555);
+    line-height: 1.5;
+}
+
+/* Footer */
+.modal-footer {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--spacing-8, 0.5rem);
+    margin-top: var(--spacing-16, 1rem);
+    padding-top: var(--spacing-8, 0.5rem);
+    border-top: 1px solid var(--border, #ddd);
+}
+
+
+

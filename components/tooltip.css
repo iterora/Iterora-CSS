@@ -25,6 +25,7 @@
     font-weight: 400;
 }
 .tooltip {
+    cursor:pointer;
     position: relative;
 }
 .tooltip.tooltip-right:focus::after, .tooltip.tooltip-right:hover::after {

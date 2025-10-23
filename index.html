@@ -2,219 +2,308 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 
-  <link rel="stylesheet" href="merge.css">
+    <link rel="stylesheet" href="merge.css">
+
+    <title>Demo</title>
 </head>
-<body class="light">
+<body class="py-16 container l">
 
-<div class="m-y8-x16">
-  <button class="btn btn-primary">Hello world</button>
-  <button class="btn btn-primary" disabled>Hello world</button>
-  <button class="btn">Hello world</button>
-  <button class="btn btn-secondary">Hello world</button>
-  <button class="btn btn-secondary btn-small">Hello world</button>
-  <button class="btn btn-secondary btn-large">Hello world</button>
-  <button class="btn-close"></button>
-</div>
+<div>
+    <h2>Buttons</h2>
+    <button class="btn btn-primary">primary</button>
+    <button class="btn btn-primary" disabled>disable</button>
+    <button class="btn">basic</button>
+    <button>without class</button>
+    <button class="btn btn-secondary">secondary</button>
+    <button class="btn btn-secondary btn-small">small</button>
+    <button class="btn btn-secondary btn-large">large</button>
+    <button class="btn btn-danger">danger</button>
 
-<div class="w-75 m-y8-x16">
-  <button class="btn btn-primary full-width">Hello world</button>
-</div>
 
-<div class="m-y8-x16 w-75">
-
-  <div class="alert alert-danger">
-      ini alert
-  </div>
-
-  <div class="alert alert-info">
-    <div>
-      ini alert
+    <div class="my-12">
+        <button class="btn btn-primary w-full">button ful width</button>
     </div>
-  </div>
+</div>
 
-  <div class="alert alert-warning">
-    <span>ini alert</span>
-  </div>
+<!--BUTTONS-->
+<div class="my-12">
+    <h2>Alert</h2>
 
-  <div class="alert alert-success">
-    ini alert
-  </div>
+    <div class="alert alert-danger" id="danger-alert">
+        <div class="alert-content">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-alert-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 8v4" /><path d="M12 16h.01" /></svg>
+            <span>danger</span>
+        </div>
+        <button onclick=toggleOpenClose('danger-alert')>x</button>
+    </div>
+
+    <div class="alert alert-info" id="alert-info">
+        <div class="alert-content">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-info-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg>
+            <span>info</span>
+        </div>
+        <button onclick=toggleOpenClose('alert-info')>x</button>
+    </div>
+
+    <div class="alert alert-warning" id="alert-warn">
+        <div class="alert-content">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-alert-triangle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 9v4" /><path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" /><path d="M12 16h.01" /></svg>
+            <span>warning</span>
+        </div>
+        <button onclick=toggleOpenClose('alert-warn')>x</button>
+    </div>
+
+    <div class="alert alert-success" id="alert-succes">
+        <div class="alert-content">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-circle-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M9 12l2 2l4 -4" /></svg>
+            <span>success</span>
+        </div>
+        <button onclick=toggleOpenClose('alert-succes')>x</button>
+    </div>
 
 </div>
 
-<div class="m-y8-x16">
-  <span class="badge-status badge-status-warning">badge warning</span>
-  <span class="badge-status badge-status-danger">badge danger</span>
-  <span class="badge-status badge-status-info">badge info</span>
-  <span class="badge-status badge-status-success">badge success</span>
+<!--BADGE-->
+<div class="my-12">
+    <h2>Badge</h2>
+    <span class="badge badge-status-warning">badge warning</span>
+    <span class="badge badge-status-danger">badge danger</span>
+    <span class="badge badge-status-info">badge info</span>
+    <span class="badge badge-status-success">badge success</span>
+    <div class="badge-container">Badge notif <span class="badge-notif"></span></div>
 </div>
 
-
-<div class="m-y8-x16">
-  <span class="tooltip " data-tooltip="hallo">tooltip</span>
+<!--TOOLTIP-->
+<div class="my-12">
+    <h2>Tooltip</h2>
+    <span class="tooltip " data-tooltip="default">default</span>
+    <span class="tooltip tooltip-right" data-tooltip="right">right</span>
+    <span class="tooltip tooltip-left" data-tooltip="left">left</span>
+    <span class="tooltip tooltip-bottom" data-tooltip="bottn">bottom</span>
 </div>
 
-<div class="m-y8-x16">
-  used figure element for scroll x
+<!--MODAL-->
+<div class="my-12">
+    <h2>Modal</h2>
+    <button class="btn" onclick="toggleOpenClose('modal-overlay')">click to open modal</button>
+
+    <div class="modal-overlay" id="modal-overlay">
+
+        <div class="modal" id="modal">
+
+            <h2 class="modal-title">Are you sure?</h2>
+
+            <div class="modal-message">
+                You will delete the selected items.
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="toggleOpenClose('modal-overlay')">Cancel</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+
+        </div>
+</div>
+</div>
+
+<!--TABLE-->
+<div class="my-12">
+    <h2>Table</h2>
     <table class="table">
-      <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>John</td>
-        <td>Doe</td>
-        <td>@social</td>
-      </tr>
-      </tbody>
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>@social</td>
+        </tr>
+        </tbody>
     </table>
 </div>
 
-<div class="m-y8-x16 w-75">
-  <form>
+<!--FORM-->
+<div class="my-12">
+    <h2>Form</h2>
+    <form>
 
-    <div class="mb-8">
-      <label class="form-label" for="1">
-        Email address
-      </label>
-      <input type="email" id="1" class="form-control">
+        <div class="row mb-12">
+
+            <section class="col-6 ">
+                <label class="form-label required" for="input-1">Name</label>
+                <input type="text" id="input-1">
+            </section>
+
+            <section class="col-6 ">
+                <label class="form-label required" for="input-2">Age</label>
+                <input type="number" id="input-2">
+            </section>
+        </div>
+
+        <div>
+            <label class="form-label required" for="input-3">File</label>
+            <input type="file" id="input-3">
+        </div>
+
+        <div class="row mt-8">
+            <label class="col-6">
+                <input type="search" class="icon-search" placeholder="search">
+            </label>
+            <label class="col-6">
+                <input type="text" class="icon-email" placeholder="email">
+            </label>
+        </div>
+
+        <div class="form-submit">
+            <button type="submit" class="btn btn-secondary">Cancel</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+    </form>
+</div>
+
+<!--FONT SIZE-->
+<div class="my-12">
+    <h1 class="fs-48">Font size 48</h1>
+    <h1 class="fs-40">Font size 40</h1>
+    <h1 class="fs-32">Font size 32</h1>
+
+    <h2 class="fs-28">this title heading</h2>
+    <h2 class="fs-20">this title subheading</h2>
+    <span>normal</span>
+</div>
+
+<!--LINK-->
+<div class="my-12">
+    <h2>Link</h2>
+    <a>link default</a>
+    <a class="link-primary">link primary</a>
+    <a class="link">link underline</a>
+</div>
+
+
+<!--TABS-->
+<div class="my-12">
+    <h2>Tab</h2>
+    <div class="tabs">
+        <ul>
+            <li class="active">tab1</li>
+            <li>tab2</li>
+            <li>tab3</li>
+        </ul>
     </div>
+</div>
 
 
-    <div class="mb-8">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
+<!--IMAGE FIGURE-->
+<div class="my-12">
+    <figure class="w-25">
+        <img src="https://plantly.io/wp-content/uploads/2023/09/IMG_4369-300x300.jpg">
+        <figcaption>captions</figcaption>
+    </figure>
+</div>
+
+<!--CARD-->
+<div class="my-12">
+    <h2>Card</h2>
+    <span>basic card</span>
+    <section class="card m-12">
+        <span class="fs-20 font-light">Total Revenue<span class="text-muted fs-16">/day</span></span>
+        <h2 class="fs-32">Rp.2.000.000</h2>
+    </section>
+
+    <span>card blog list </span>
+    <div class="card-container">
+
+        <div class="card card-blog">
+            <img class="card-blog-img" src="https://aioseo.com/wp-content/uploads/2025/09/check-website-seo-status-1536x856.png">
+
+            <div class="card-header">
+                <h2 class="card-title">How to configure wordpress</h2>
+                <span class="text-muted fs-12">Yesterday</span>
+            </div>
+            <div class="card-description">
+                <span>Looking for practical URL redirection tips to improve user experience and boost your search rankings? Learn from my mistakes.</span>
+            </div>
+        </div>
+
+        <div class="card card-blog">
+            <img class="card-blog-img" src="https://aioseo.com/wp-content/uploads/2025/09/check-website-seo-status-1536x856.png">
+
+            <div class="card-header">
+                <h2 class="card-title">How to configure wordpress</h2>
+                <span class="text-muted fs-12">Yesterday</span>
+            </div>
+            <div class="card-description">
+                <span>Looking for practical URL redirection tips to improve user experience and boost your search rankings? Learn from my mistakes.</span>
+            </div>
+        </div>
+
+        <div class="card card-blog">
+            <img class="card-blog-img" src="https://aioseo.com/wp-content/uploads/2025/09/check-website-seo-status-1536x856.png">
+
+            <div class="card-header">
+                <h2 class="card-title">How to configure wordpress</h2>
+                <span class="text-muted fs-12">Yesterday</span>
+            </div>
+            <div class="card-description">
+                <span>Looking for practical URL redirection tips to improve user experience and boost your search rankings? Learn from my mistakes.</span>
+            </div>
+        </div>
+
+        <div class="card card-blog">
+            <img class="card-blog-img" src="https://aioseo.com/wp-content/uploads/2025/09/check-website-seo-status-1536x856.png">
+
+            <div class="card-header">
+                <h2 class="card-title">How to configure wordpress</h2>
+                <span class="text-muted fs-12">Yesterday</span>
+            </div>
+            <div class="card-description">
+                <span>Looking for practical URL redirection tips to improve user experience and boost your search rankings? Learn from my mistakes.</span>
+            </div>
+        </div>
+
     </div>
-
-
-    <div class="mb-8">
-      <input type="checkbox" id="exampleCheck1">
-      <label class="form-radio" for="exampleCheck1">Check me out</label>
-    </div>
-
-
-    <div class="row mb-8">
-      <div class="col">
-        <label class="form-label">
-          file
-          <input type="file" class="form-control" >
-        </label>
-      </div>
-      <div class="col">
-        <label class="form-label">
-          content
-          <textarea></textarea>
-        </label>
-      </div>
-
-    </div>
-
-
-
-    <div class="form-submit">
-      <button type="submit" class="btn btn-secondary">Cancel</button>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-
-  </form>
 </div>
-
-
-<div class="m-y8-x16 w-50">
-  <img class="img-fluid" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870">
-
-  <figure>
-    <img class="img-fluid" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870">
-    <figcaption style="font-weight: 300">Figure with figcaption</figcaption>
-  </figure>
-
-</div>
-
-
-<div class="m-y8-x16">
-  <h1 class="fs-48">Title </h1>
-  <h1 class="fs-40">Title </h1>
-  <h1 class="fs-32">Title </h1>
-
-  <h2 class="title-head">this title heading</h2>
-  <h2 class="title-subhead">this title subheading</h2>
-  <span>normal</span>
-</div>
-
-
-<div class="m-y8-x16">
-  <a>link default</a>
-  <a class="link-primary">link</a>
-</div>
-
-
-<div class="m-y8-x16">
-  <div class="tabs">
-    <ul>
-      <li class="active">tab1</li>
-      <li>tab2</li>
-      <li>tab3</li>
-    </ul>
-  </div>
-</div>
-
-
-
-<div class="m-y8-x16">
-  <div class="row">
-    <div class="col bg-primary-transparent-70"> .col </div>
-  </div>
-  <div class="row">
-    <div class="col bg-primary-transparent-70"> .col </div>
-    <div class="col bg-primary-transparent-70"> .col </div>
-    <div class="col bg-primary-transparent-70"> .col </div>
-  </div>
-</div>
-
-
-<div class="m-y8-x16 container border">
-  <pre><code>&lt;p&gt;Container and code&lt;/p&gt;
-</code></pre>
-</div>
-
-<div class="m-y8-x16">
-  <div class="search-input">
-    <label>
-      <input type="search" placeholder="search">
-    </label>
-    <button class="btn-search">
-      <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
-    </button>
-  </div>
-</div>
-
 
 </body>
+<script>
+    function toggleOpenClose(param) {
+        const element = document.getElementById(param);
+        if (element.classList.contains("active")) {
+            element.classList.remove("active");
+        } else {
+            element.classList.add("active");
+        }
+    }
+
+
+</script>
 </html>

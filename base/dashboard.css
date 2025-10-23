@@ -60,16 +60,25 @@
     padding: var(--spacing-4) var(--spacing-12);
 }
 .sidebar-menu .menu-item:hover{
-    background-color: var(--bg-layer2);
+    background-color: color-mix(in srgb, var(--primary), transparent 85%);
 }
 .sidebar-menu .menu-item.active{
-    background-color: var(--bg-layer2);
+    background-color: color-mix(in srgb, var(--primary), transparent 85%);
+    color: var(--primary);
+    svg{
+        color: var(--primary);
+    }
 }
 .sidebar-menu .menu-item-group{
     padding: var(--spacing-4) var(--spacing-16);
     color: var(--text-muted);
 }
-
+.dropdown{
+    display: none;
+}
+.dropdown.active{
+    display: block;
+}
 
 
 
@@ -93,4 +102,9 @@
 
 .content .content-main{
     padding: var(--spacing-12);
+}
+.content-main .header{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-16) var(--spacing-12);
 }

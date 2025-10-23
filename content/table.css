@@ -18,7 +18,7 @@ th {
 }
 
 tbody tr:hover{
-    background: var(--bg-layer2);
+    background-color: color-mix(in srgb, var(--bg-layer2), transparent 70%);
 }
 
 tbody tr td{

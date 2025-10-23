@@ -7,6 +7,8 @@
 @import "components/badge.css";
 @import "components/tooltip.css";
 @import "components/link.css";
+@import "components/modal.css";
+@import "components/card.css";
 
 
 @import "content/table.css";
@@ -16,7 +18,7 @@
 
 
 @import "form/form.css";
-@import "form/search.css";
+@import "form/input-icons.css";
 
 
 @import "other/image.css";

@@ -1,0 +1,27 @@
+<div class="dblock jc-space-beetween">
+    <h2 class="fs-32 mb-8">Rich Editor</h2>
+</div>
+
+<div id="summernote"></div>
+
+<script src="summernote/summernote-lite.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#summernote').summernote({
+            placeholder: 'Powered by summernote',
+            tabsize: 2,
+            height: 300,
+            toolbar: [
+                ['style', ['bold', 'italic', 'underline']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['insert', ['link', 'picture']]
+            ],
+            icons:{
+                'bold':"<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"icon icon-tabler icons-tabler-outline icon-tabler-bold\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M7 5h6a3.5 3.5 0 0 1 0 7h-6z\" /><path d=\"M13 12h1a3.5 3.5 0 0 1 0 7h-7v-7\" /></svg>",
+                'italic':"<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"icon icon-tabler icons-tabler-outline icon-tabler-italic\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M11 5l6 0\" /><path d=\"M7 19l6 0\" /><path d=\"M14 5l-4 14\" /></svg>",
+                'underline':"<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"icon icon-tabler icons-tabler-outline icon-tabler-underline\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M7 5v5a5 5 0 0 0 10 0v-5\" /><path d=\"M5 19h14\" /></svg>",
+            }
+        });
+    });
+</script>

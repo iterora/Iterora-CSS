@@ -1,3 +1,7 @@
+.link:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
 .link-primary{
     padding: var(--spacing-8) var(--spacing-16);
     border-radius: var(--border-radius-3px);

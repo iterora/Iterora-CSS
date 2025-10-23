@@ -1,5 +1,5 @@
 form{
-    padding: var(--spacing-8) var(--spacing-16);
+    font-weight: 400;
 }
 input, select,textarea {
     border: 1px solid var(--border);
@@ -52,9 +52,14 @@ input[type="file"]::file-selector-button {
 }
 
 .form-label{
-    display: inline-block;
+    display: block;
     flex: 1;
     color: var(--text-muted);
+}
+label.required::after {
+    content: " *";
+    color: red;
+    font-weight: bold;
 }
 .form-radio{
     margin-left: var(--spacing-4);
