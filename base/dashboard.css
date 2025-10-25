@@ -98,12 +98,27 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    gap: var(--spacing-12);
+}
+.content .content-header .profile{
+    border-radius: 50%;
+    width: var(--icon-base);
+
+    cursor: pointer;
+
+    /*agar sejajar dengan icon*/
+    margin-bottom: 4px;
 }
 
+
+/*content main*/
 .content .content-main{
     padding: var(--spacing-12);
 }
 .content-main .header{
+    background-color: var(--bg-layer1);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius-6px);
     display: flex;
     justify-content: space-between;
     padding: var(--spacing-16) var(--spacing-12);

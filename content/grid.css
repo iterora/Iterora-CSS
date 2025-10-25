@@ -1,36 +1,75 @@
-/* Container styles */
+/*CHATGPT Version
+Note : im not professional about grid
+*/
+
+/* ============================================
+   CONTAINER SYSTEM
+   --------------------------------------------
+   Versi ini mengikuti gaya Bootstrap modern.
+   Padding kiri-kanan tetap terjaga,
+   tapi lebar container dibatasi per breakpoint.
+   ============================================ */
 .container {
     width: 100%;
-    max-width: 1200px;
+    padding-right: var(--spacing-16);
+    padding-left: var(--spacing-16);
+    margin-right: auto;
+    margin-left: auto;
     box-sizing: border-box;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
+/* Fluid version (selalu 100%) */
 .container-fluid {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-right: var(--spacing-16);
+    padding-left: var(--spacing-16);
+    margin-right: auto;
+    margin-left: auto;
     box-sizing: border-box;
 }
 
-/* Grid system */
+/* Breakpoint width limits (Bootstrap 5 style) */
+@media (min-width: 576px) {
+    .container { max-width: 540px; }
+}
+@media (min-width: 768px) {
+    .container { max-width: 720px; }
+}
+@media (min-width: 992px) {
+    .container { max-width: 960px; }
+}
+@media (min-width: 1200px) {
+    .container { max-width: 1140px; }
+}
+@media (min-width: 1400px) {
+    .container { max-width: 1320px; }
+}
+
+/* ============================================
+   GRID SYSTEM
+   --------------------------------------------
+   Mirip Bootstrap: gunakan flexbox dan margin negatif
+   agar gutter (jarak antar kolom) rapi.
+   ============================================ */
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-}
-
-/* Column base styles */
-[class*="col-"] {
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-right: -15px; /* "Menetralkan" padding kolom kanan */
+    margin-left: -15px;  /* "Menetralkan" padding kolom kiri */
     box-sizing: border-box;
 }
 
-/* Grid columns for different breakpoints */
-/* Extra small (default, <576px) */
+/* Kolom dasar */
+[class*="col-"] {
+    padding-right: 15px; /* Membentuk gutter */
+    padding-left: 15px;
+    box-sizing: border-box;
+    flex: 1 0 0%;
+}
+
+/* ============================================
+   COLUMN WIDTHS
+   -------------------------------------------- */
 .col-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }
 .col-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }
 .col-3 { flex: 0 0 25%; max-width: 25%; }
@@ -44,7 +83,9 @@
 .col-11 { flex: 0 0 91.666667%; max-width: 91.666667%; }
 .col-12 { flex: 0 0 100%; max-width: 100%; }
 
-/* Small devices (≥576px) */
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
 @media (min-width: 576px) {
     .col-sm-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }
     .col-sm-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }
@@ -60,7 +101,6 @@
     .col-sm-12 { flex: 0 0 100%; max-width: 100%; }
 }
 
-/* Medium devices (≥768px) */
 @media (min-width: 768px) {
     .col-md-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }
     .col-md-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }
@@ -76,7 +116,6 @@
     .col-md-12 { flex: 0 0 100%; max-width: 100%; }
 }
 
-/* Large devices (≥992px) */
 @media (min-width: 992px) {
     .col-lg-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }
     .col-lg-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }
@@ -92,7 +131,7 @@
     .col-lg-12 { flex: 0 0 100%; max-width: 100%; }
 }
 
-/* Extra large devices (≥1200px) */
+/* XL & XXL */
 @media (min-width: 1200px) {
     .col-xl-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }
     .col-xl-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }
@@ -108,12 +147,32 @@
     .col-xl-12 { flex: 0 0 100%; max-width: 100%; }
 }
 
-/* Utility classes for alignment and spacing */
+/* XXL (Bootstrap 5 tambahan) */
+@media (min-width: 1400px) {
+    .col-xxl-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }
+    .col-xxl-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }
+    .col-xxl-3 { flex: 0 0 25%; max-width: 25%; }
+    .col-xxl-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+    .col-xxl-5 { flex: 0 0 41.666667%; max-width: 41.666667%; }
+    .col-xxl-6 { flex: 0 0 50%; max-width: 50%; }
+    .col-xxl-7 { flex: 0 0 58.333333%; max-width: 58.333333%; }
+    .col-xxl-8 { flex: 0 0 66.666667%; max-width: 66.666667%; }
+    .col-xxl-9 { flex: 0 0 75%; max-width: 75%; }
+    .col-xxl-10 { flex: 0 0 83.333333%; max-width: 83.333333%; }
+    .col-xxl-11 { flex: 0 0 91.666667%; max-width: 91.666667%; }
+    .col-xxl-12 { flex: 0 0 100%; max-width: 100%; }
+}
+
+/* ============================================
+   ALIGNMENT HELPERS
+   ============================================ */
 .row.align-items-start { align-items: flex-start; }
 .row.align-items-center { align-items: center; }
 .row.align-items-end { align-items: flex-end; }
+
 .row.justify-content-start { justify-content: flex-start; }
 .row.justify-content-center { justify-content: center; }
 .row.justify-content-end { justify-content: flex-end; }
 .row.justify-content-between { justify-content: space-between; }
 .row.justify-content-around { justify-content: space-around; }
+.row.justify-content-evenly { justify-content: space-evenly; }

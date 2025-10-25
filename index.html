@@ -14,7 +14,7 @@
 
     <title>Demo</title>
 </head>
-<body class="py-16 container l">
+<body class="py-16 container ">
 
 <div>
     <h2>Buttons</h2>
@@ -156,12 +156,13 @@
 
         <div class="row mb-12">
 
-            <section class="col-6 ">
+            <section class="col-12 col-md-6 ">
                 <label class="form-label required" for="input-1">Name</label>
                 <input type="text" id="input-1">
+                <span class="validation">the name must be capital case letter</span>
             </section>
 
-            <section class="col-6 ">
+            <section class="col-12 col-md-6 ">
                 <label class="form-label required" for="input-2">Age</label>
                 <input type="number" id="input-2">
             </section>
@@ -173,12 +174,35 @@
         </div>
 
         <div class="row mt-8">
-            <label class="col-6">
-                <input type="search" class="icon-search" placeholder="search">
-            </label>
-            <label class="col-6">
-                <input type="text" class="icon-email" placeholder="email">
-            </label>
+            <div class="col-12 col-md-3">
+                <label class="form-label" for="search">Search</label>
+                <input type="search" class="icon-search" id="search" placeholder="search">
+            </div>
+            <div class="col-12 col-md-9">
+                <label class="form-label" for="email">Email</label>
+                <input type="text" class="icon-email" id="email" placeholder="email">
+                <span class="form-helper">this is a helper form input</span>
+            </div>
+        </div>
+
+        <div>
+            <select>
+                <option>a</option>
+                <option>b</option>
+            </select>
+        </div>
+
+        <div>
+            <label class="form-label" for="password">Password</label>
+            <div class="password">
+                <input type="password" id="password">
+                <span class="toggle-password"
+                      id="toggle-password"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg></span>
+            </div>
+            <ul class="form-helper">
+                <li>password must at least 8 char</li>
+                <li>password should have capital case letter</li>
+            </ul>
         </div>
 
         <div class="form-submit">
@@ -292,6 +316,15 @@
 
     </div>
 </div>
+
+
+<!--CODE COPY-->
+<div class="my-12">
+    <pre class="code"><code>def hello_world():
+    print("Hello, World!")
+hello_world()</code></pre>
+</div>
+
 
 </body>
 <script>

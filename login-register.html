@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="merge.css">
+
+    <title>Demo login register</title>
+</head>
+<body class="">
+
+<div class="container p-16">
+
+    <div class="row">
+
+        <form class="col-10 col-md-5 br-round border p-24 m-12">
+
+<!--    header        -->
+            <div class="mb-28">
+                <img class="mb-12" src="https://www.gstatic.com/marketing-cms/assets/images/66/e7/e59d97cf48018399200baab0587f/admob.webp=s48-fcrop64=1,00000000ffffffff-rw">
+                <h3 class="fs-28">Sign in to iterora</h3>
+            </div>
+
+            <!--    input        -->
+            <div class=" mb-12">
+                <label class="form-label" for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class=" mb-12">
+                <label class="form-label" for="password">Password</label>
+                <div class="password">
+                    <input type="password" id="password">
+                    <span class="toggle-password"
+                          id="toggle-password"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg></span>
+                </div>
+            </div>
+
+            <div>
+                <a href="" class="link">Forgot password?</a>
+            </div>
+
+            <div class="form-submit">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+
+        </form>
+
+        <form class="col-10 col-md-5 br-round border p-24 m-12">
+
+            <!--    header        -->
+            <div class="mb-28">
+                <img class="mb-12" src="https://www.gstatic.com/marketing-cms/assets/images/66/e7/e59d97cf48018399200baab0587f/admob.webp=s48-fcrop64=1,00000000ffffffff-rw">
+                <h3 class="fs-28">Sign up to iterora</h3>
+            </div>
+
+            <!--    input        -->
+            <div class=" mb-12">
+                <label class="form-label required" for="email1">Email</label>
+                <input type="email" id="email1" required>
+            </div>
+
+            <div class=" mb-12">
+                <label class="form-label optional" for="username">Username</label>
+                <input type="text" id="username" required>
+            </div>
+
+            <div class=" mb-12">
+                <label class="form-label required" for="password">Password</label>
+                <div class="password">
+                    <input type="password" id="password1">
+                    <span class="toggle-password"
+                          id="toggle-password1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg></span>
+                </div>
+                <ul class="form-helper">
+                    <li>- password must at least 8 char</li>
+                    <li>- password should have capital case letter</li>
+                </ul>
+            </div>
+
+            <div class="form-submit">
+                <button type="submit" class="btn btn-primary">Sign up</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

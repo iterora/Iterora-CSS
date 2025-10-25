@@ -32,6 +32,9 @@ input[type=checkbox], input[type=radio] {
     border-color: var(--border);
     accent-color: var(--primary);
 }
+option{
+    background-color: var(--bg-layer1);
+}
 input[type="file"]{
     cursor: pointer;
     border: 1px solid var(--border);
@@ -56,6 +59,11 @@ input[type="file"]::file-selector-button {
     flex: 1;
     color: var(--text-muted);
 }
+label.optional::after {
+    content: " (optional)";
+    color: var(--text-muted);
+    font-weight: 300;
+}
 label.required::after {
     content: " *";
     color: red;
@@ -70,4 +78,34 @@ label.required::after {
     display: flex;
     justify-content: flex-end;
     gap: var(--spacing-12);
+}
+.validation{
+    color: var(--danger);
+}
+.form-helper{
+    margin: var(--spacing-4) 0;
+    color: var(--text-muted);
+    font-size: var(--font-12);
+    font-style: italic;
+    font-weight: 300;
+    display: block;
+}
+.password{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.toggle-password{
+    position: absolute;
+    right: 10px;
+    top: 60%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: var(--text-muted);
+}
+.toggle-password.active{
+    color: var(--primary);
 }

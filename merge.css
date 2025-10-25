@@ -9,6 +9,7 @@
 @import "components/link.css";
 @import "components/modal.css";
 @import "components/card.css";
+@import "components/code.css";
 
 
 @import "content/table.css";
@@ -23,3 +24,4 @@
 
 @import "other/image.css";
 @import "other/utility.css";
+@import "other/product.css";

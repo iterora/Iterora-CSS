@@ -1,8 +1,11 @@
 table {
     min-width: 0;
 }
-
-th, td {
+tr td{
+    padding: var(--spacing-4);
+}
+table.table th,
+table.table td {
     padding: var(--spacing-8) var(--spacing-16);
     border-color: var(--border);
     border-width: 1px;
@@ -10,26 +13,30 @@ th, td {
 
     text-align: start;
 }
-
-th {
+table.table td {
+    padding: var(--spacing-12) var(--spacing-16);
+}
+table.table th {
     font-weight: 600;
     text-align: left;
     color: var(--text-muted);
 }
 
-tbody tr:hover{
-    background-color: color-mix(in srgb, var(--bg-layer2), transparent 70%);
+table.table tbody tr:hover{
+    background-color: color-mix(in srgb, var(--bg-layer2), transparent 50%);
 }
 
-tbody tr td{
+table.table tbody tr td{
     min-width: 7rem;
     color: var(--text);
 }
-thead th, thead td {
+table.table thead th,
+table.table thead td {
     border-width: 2px;
 }
 
-tfoot th, tfoot td {
+table.table tfoot th,
+table.table tfoot td {
     border-width: 2px;
     border-bottom-style: none;
     border-top-style: solid;

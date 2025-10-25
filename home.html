@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="merge.css">
+    <link rel="stylesheet" href="base/skeleton-home.css">
+
+
+</head>
+<body>
+
+
+    <nav class="home">
+        <div class="logo">Logo</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#" class="link">Home</a></li>
+            <li><a href="#" class="link">Products</a></li>
+            <li><a href="#" class="link">E-Book</a></li>
+            <li><a href="#" class="link">Blog</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleOpenClose('nav-links')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8l16 0" /><path d="M4 16l16 0" /></svg>
+        </div>
+    </nav>
+
+
+    <div class="container content">
+
+    </div>
+
+
+    <div class="footer">
+
+        <footer class="main">
+
+            <div class="bag-1">
+                <span class="fs-28 font-500">Iterora Logo</span>
+                <br>
+                <span class="text-muted">Iterora merupakan software developer yang berasal dari indonesia.</span>
+                <div class="media-connect">
+                    <ul>
+                        <li><a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" /><path d="M10 9l5 3l-5 3z" /></svg></a></li>
+                        <li><a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bag-2">
+                    <ul>
+                        <li class="font-400 mb-4">Company</li>
+                        <li><a class="link fs-14" href="">Products</a></li>
+                        <li><a class="link fs-14" href="">Contact</a></li>
+                        <li><a class="link fs-14" href="">Blog</a></li>
+                        <li><a class="link fs-14" href="">About</a></li>
+                    </ul>
+                </div>
+            <div class="bag-3">
+                    <ul>
+                        <li class="font-400 mb-4">Helpful Links</li>
+                        <li><a class="link fs-14" href="">Send Message</a></li>
+                        <li><a class="link fs-14" href="">E-Books</a></li>
+                        <li><a class="link fs-14" href="">Design Templates</a></li>
+                    </ul>
+                </div>
+
+        </footer>
+        <div class="copyright fs-12 text-muted">
+            Copyright © 2025 Iterora - Tangerang, Indonesia
+        </div>
+    </div>
+
+</body>
+<script>
+    function toggleOpenClose(param) {
+        const element = document.getElementById(param);
+        if (element.classList.contains("active")) {
+            element.classList.remove("active");
+        } else {
+            element.classList.add("active");
+        }
+    }
+</script>
+</html>

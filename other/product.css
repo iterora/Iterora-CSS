@@ -1,0 +1,115 @@
+.detail-product{
+    min-height: 100%;
+}
+
+/*left container*/
+.product-left-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: var(--spacing-16);
+    width: 100%;
+    height: inherit;
+}
+.container-image-main{
+    padding: var(--spacing-12);
+    border:1px solid var(--border);
+    border-radius: var(--border-radius-6px);
+    margin-bottom: var(--spacing-20);
+}
+.product-image-main {
+    width: 100%;
+    object-fit: cover;
+}
+.container-product-image-alternative{
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-12);
+    justify-content: center;
+}
+.product-image-alternative{
+    width: 15%;
+    border-radius: var(--border-radius-6px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.product-image-alternative:hover{
+    transform: translateY(-5px);
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (height/width * 100) */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/*right container*/
+.product-right-container {
+    padding: var(--spacing-16);
+    border-left: 1px solid var(--border);
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: inherit;
+    min-height: 0;
+    box-sizing: border-box;
+}
+
+.product-right-container .header {
+    margin: var(--spacing-16) 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.product-right-container .header .price {
+    display: inline-block;
+    margin: var(--spacing-12) 0;
+    font-size: var(--font-24);
+    font-weight: 600;
+}
+
+/*section and title*/
+.product-right-container .content section{
+    margin: var(--spacing-12) 0;
+}
+.product-right-container .content .content-title {
+    margin-bottom: var(--spacing-8);
+    display: block;
+    color: var(--primary);
+    font-weight: 500;
+    font-size: var(--spacing-20);
+}
+/*section and title*/
+
+
+/*component*/
+.product-right-container .content .share{
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-16);
+}
+.product-right-container .content .button-share{
+    padding: var(--spacing-8);
+    border-radius: var(--border-radius-6px);
+    display: flex;
+    align-items: center;
+    border:1px solid var(--border);
+    cursor: pointer;
+}
+
+
+
+
+/* Relevan product*/
+.relevant-products{
+    border-top: 1px solid var(--border);
+    padding: var(--spacing-20) 0;
+}

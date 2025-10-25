@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="merge.css">
+
+    <title>Product Detail</title>
+</head>
+<body class="light">
+
+<div class="container">
+
+    <div class="row detail-product">
+
+        <div class="col-12 col-md-7 product-left-container">
+
+            <div>
+                <figure class="container-image-main">
+                    <img class="product-image-main"
+                         id="image-1"
+                         src="https://lovisesofa.com/wp-content/uploads/2021/12/09.-Katalog-Sofa-Madrid-1-Seat-584x584.png">
+                </figure>
+
+                <div class="container-product-image-alternative">
+                    <img    class="product-image-alternative" id="image-2"
+                            src="https://lovisesofa.com/wp-content/uploads/2021/12/09.-Katalog-Sofa-Madrid-1-Seat-584x584.png">
+                    <img    class="product-image-alternative" id="image-3"
+                            src="https://lovisesofa.com/wp-content/uploads/2021/06/Sofa-KALISA-2-Seat-Prime-584x584.jpg">
+                    <img    class="product-image-alternative" id="image-4"
+                            src="https://lovisesofa.com/wp-content/uploads/2021/12/08.-Katalog-Sofa-Kalisa-1-Seat-584x584.png">
+                </div>
+            </div>
+
+        </div>
+
+<!--        product right-->
+        <div class="col-12 col-md-5 product-right-container">
+            <div class="header">
+                <h2 class="fs-28">Seat Kalisa Prime</h2>
+                <span class="price">Rp6.600.000</span>
+            </div>
+            <div class="content">
+
+                <section>
+                    <span class="content-title">Description</span>
+                    Sofa Sudut Vernanda Prime menghadirkan kenyamanan memberikan kenyamanan maksimal. Rangka sofa memiliunakan. Sangat cocok untuk melengkapi ruang keluarga atau ruang tamu agar semakin nyaman. Dapatkan produk berkualitas di Lovise Sofa dengan penawaran menarik.
+                </section>
+
+                <section>
+                    <span class="content-title">Detail product</span>
+                    <table>
+                        <tr>
+                            <td>panjang</td>
+                            <td>120cm</td>
+                        </tr>
+                        <tr>
+                            <td>tinggi</td>
+                            <td>56cm</td>
+                        </tr>
+                        <tr>
+                            <td>lebar</td>
+                            <td>20cm</td>
+                        </tr>
+                        <tr>
+                            <td>berat</td>
+                            <td>53kg</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <span class="content-title">Product video</span>
+                    <div class="video-container">
+                        <iframe
+                                class="br-round"
+                                sandbox="allow-scripts allow-same-origin"
+                                src="https://www.youtube.com/embed/afoQineCUfM?si=gej4aAk73VbSnpYY"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allowfullscreen>
+                        </iframe>
+
+                    </div>
+
+                </section>
+
+                <section>
+                    <span class="content-title">Share this product</span>
+                    <div class="share">
+                        <div class="button-share"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-clipboard"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" /><path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /></svg></div>
+                        <div class="button-share"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg></div>
+
+                    </div>
+                </section>
+
+                <section>
+                    <button class="btn btn-primary w-full">order product</button>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="relevant-products">
+        <h3 class="fs-20">Relevant Products</h3>
+
+        <div class="relevant-product-list">
+
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Ambil elemen gambar utama
+        const mainImage = document.getElementById("image-1");
+
+        // Ambil semua image alternative
+        const alternatives = document.querySelectorAll(".product-image-alternative");
+
+        // Loop setiap image alternative dan tambahkan event click
+        alternatives.forEach(img => {
+            img.addEventListener("click", function() {
+                // Ganti src gambar utama dengan src dari image yang diklik
+                mainImage.src = this.src;
+            });
+        });
+    });
+</script>
+
+</html>

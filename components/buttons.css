@@ -57,7 +57,10 @@ body.light .btn-primary{
     background-color: var(--bg-layer2);
     border: 1px solid var(--bg-layer2);
 }
-
+.btn-med{
+    padding: var(--spacing-8) var(--spacing-12);
+    font-size: 14px;
+}
 .btn-small{
     padding: var(--spacing-4) var(--spacing-8);
     font-size: var(--font-12);
